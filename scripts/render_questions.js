@@ -36,4 +36,10 @@ let questionValues = [100, 200, 300, 400, 500];
  */
 function renderQuestions() {
     // Add code here
+    let i
+    for (i = 0; i < numCategories; i++){
+        questionValues.forEach(function(value) {
+        $("#questions").append(<div class='question'><div class='question-${value}'>${value}</div></div>);
+        });
+    }
 }
