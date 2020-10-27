@@ -34,10 +34,10 @@ let categories = [
  */
 function renderCategories() {
     // Add code here
-    categories.forEach(function(category) {
+   for (let category of categories){
         category = category.toUppercase();
         console.log(category);
-    $("#categories").append(<div class='category'><div class='category-cell'>"${category}"</div></div>);
-    });
+    $("#categories").append("<div class='category'><div class='category-cell'>${category}</div></div>");
+    }
     
 }

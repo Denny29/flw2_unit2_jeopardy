@@ -39,7 +39,7 @@ function renderQuestions() {
     let i
     for (i = 0; i < numCategories; i++){
         questionValues.forEach(function(value) {
-        $("#questions").append(<div class='question'><div class='question-${value}'>${value}</div></div>);
+        $("#questions").append("<div class='question'><div class='question-cell' data-category='${i}'>${value}</div></div>");
         });
     }
 }
