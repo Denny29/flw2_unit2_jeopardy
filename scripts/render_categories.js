@@ -35,9 +35,9 @@ let categories = [
 function renderCategories() {
     // Add code here
    for (let category of categories){
-        category = category.toUppercase();
+        category = category.toUpperCase();
         console.log(category);
-    $("#categories").append("<div class='category'><div class='category-cell'>${category}</div></div>");
+    $("#categories").append(`<div class='category'><div class='category-cell'>${category}</div></div>`);
     }
     
 }
