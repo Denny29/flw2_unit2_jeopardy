@@ -41,6 +41,7 @@ function attachClickHandlers() {
     let moneyValue = $(questionElement).text().replace("$", "");
     $(questionElement).click(() => {
       // Add code here
+        questionOnClick(categoryIndex, moneyValue);
     });
   });
 }
